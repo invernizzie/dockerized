@@ -22,4 +22,4 @@ RUN /usr/local/bin/mysql_setup.sh
 
 EXPOSE 3306
 
-ENTRYPOINT ["mysqld_safe"]
+ENTRYPOINT ["/usr/bin/mysqld_safe"]
