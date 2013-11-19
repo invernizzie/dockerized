@@ -21,5 +21,5 @@ RUN chmod 755 /usr/local/bin/mysql_setup.sh
 RUN /usr/local/bin/mysql_setup.sh
 
 EXPOSE 3306
-
+VOLUME ["/var/lib/mysql"]
 ENTRYPOINT ["/usr/bin/mysqld_safe"]
