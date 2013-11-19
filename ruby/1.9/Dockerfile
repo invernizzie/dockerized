@@ -15,6 +15,6 @@ RUN apt-get -qq update
 RUN apt-get install -y ruby1.9.1 ruby1.9.1-dev rubygems ruby-switch
 RUN ruby-switch --set ruby1.9.1
 
-RUN gem install bundler --no-rdoc --no-ri
+RUN gem install rake bundler --no-rdoc --no-ri
 
 CMD ["/usr/bin/ruby"]

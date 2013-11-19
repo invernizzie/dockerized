@@ -15,6 +15,6 @@ RUN apt-get -qq update
 RUN apt-get install -y ruby2.0 ruby2.0-dev rubygems ruby-switch
 RUN ruby-switch --set ruby2.0
 
-RUN gem install bundler --no-rdoc --no-ri
+RUN gem install rake bundler --no-rdoc --no-ri
 
 CMD ["/usr/bin/ruby"]
